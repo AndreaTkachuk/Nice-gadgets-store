@@ -1,21 +1,30 @@
-import React from 'react';
-import './App.scss';
+import styles from './App.module.scss';
+import { Outlet } from 'react-router-dom';
+import { Footer } from './components/Footer/Footer';
+import { Header } from './components/Header/Header';
+import { useEffect } from 'react';
+import { loadingSlice } from './features/loadingSlice';
+import { useAppDispatch } from './app/hooks';
 
-interface Props {
-  onClick: () => void;
-  children: React.ReactNode;
-}
+export const App = () => {
+  const dispatch = useAppDispatch();
 
-export const Provider: React.FC<Props> = React.memo(({ onClick, children }) => (
-  <button type="button" onClick={onClick}>
-    {children}
-  </button>
-));
+  useEffect(() => {
+    const timer = setTimeout(
+      () => dispatch(loadingSlice.actions.setLoading(false)),
+      1000,
+    );
 
-export const App: React.FC = () => {
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>TodoList</Provider>
+    <div className={styles.App}>
+      <Header />
+
+      <Outlet />
+
+      <Footer />
     </div>
   );
 };
