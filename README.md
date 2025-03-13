@@ -1,6 +1,6 @@
 # Nice Gadgets store
 
-[DEMO LINK](https://AndreaTkachuk.github.io/react_phone-catalog/)
+[DEMO LINK](https://AndreaTkachuk.github.io/Nice-gadgets-store/)
 
 ## Designs:
 - [Original](https://www.figma.com/file/T5ttF21UnT6RRmCQQaZc6L/Phone-catalog-(V2)-Original)

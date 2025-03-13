@@ -21,7 +21,7 @@ export const Footer = () => {
           <ul className={styles.footer__nav__list}>
             <li className={styles.footer__list__item}>
               <Link
-                to="https://github.com/AndreaTkachuk/react_phone-catalog/"
+                to="https://github.com/AndreaTkachuk/"
                 className={stylesNav.nav__link}
               >
                 Github
@@ -37,7 +37,7 @@ export const Footer = () => {
             </li>
             <li className={styles.footer__list__item}>
               <Link
-                to="https://github.com/AndreaTkachuk/react_phone-catalog/"
+                to="https://github.com/AndreaTkachuk/Nice-gadgets-store/"
                 className={stylesNav.nav__link}
               >
                 {translate('footer.link.rights', lang)}
