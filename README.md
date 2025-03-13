@@ -24,12 +24,12 @@ A responsive web application showcasing a diverse catalog of phones, tablets, an
 
 	1. Open your terminal and run the following command to clone the repository:
 
-        git clone https://github.com/AndreaTkachuk/react_phone-catalog.git
+        git clone https://github.com/AndreaTkachuk/Nice-gadgets-store.git
 
 
 	2. Move into the project directory:
 
-        cd react_phone-catalog
+        cd Nice-gadgets-store
 
 
 	3. Ensure that Node.js version v20.x.x is installed. Verify this by running:
